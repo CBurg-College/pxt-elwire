@@ -39,4 +39,5 @@ namespace CBurgElWire {
         basic.pause(time * 1000);
         pins.digitalWritePin(pin1, 0);
     }
+
 }
