@@ -1,8 +1,15 @@
+onDisplay(() => {
+    if (ELWire.REMOTE)
+        basic.showString("A")
+    else
+        basic.showNumber(GROUP)
+})
+
 //% color="#00CC00" icon="\uf1f9"
 //% block="Electric Wire"
 namespace ELWire {
 
-    let REMOTE = false
+    export let REMOTE = false
 
     export enum Operation {
         //% block="ELWire 1 on"
@@ -31,6 +38,7 @@ namespace ELWire {
     //% block.loc.nl="zet afstandbediening aan"
     export function setRemote() {
         REMOTE = true
+        basic.showString("A")
     }
 
     //% block="turn %elwire off"
