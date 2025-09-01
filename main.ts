@@ -1,5 +1,5 @@
 onDisplay(() => {
-    basic.showNumber(GROUP)
+    basic.showIcon(IconNames.Happy)
 })
 
 //% color="#00CC00" icon="\uf1f9"
