@@ -1,8 +1,5 @@
 onDisplay(() => {
-    if (ELWire.REMOTE)
-        basic.showString("A")
-    else
-        basic.showNumber(GROUP)
+    basic.showNumber(GROUP)
 })
 
 //% color="#00CC00" icon="\uf1f9"
@@ -38,7 +35,6 @@ namespace ELWire {
     //% block.loc.nl="zet afstandbediening aan"
     export function setRemote() {
         REMOTE = true
-        basic.showString("A")
     }
 
     //% block="turn %elwire off"
